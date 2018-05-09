@@ -1,0 +1,604 @@
+body {
+	width: 100% !important;
+	 height: 100% !important;
+	  color: rgb(97, 110, 124);
+		 font-family: "Open Sans", sans-serif;
+		  -webkit-font-smoothing: antialiased;
+			 text-rendering: optimizeLegibility;
+}
+html {
+	width: 100% !important;
+	 height: 100% !important;
+	  color: rgb(97, 110, 124);
+		 font-family: "Open Sans", sans-serif;
+		  -webkit-font-smoothing: antialiased;
+			 text-rendering: optimizeLegibility;
+}
+h1 {
+	font-weight: 700;
+}
+h1 strong {
+	font-weight: 900;
+}
+h2 {
+	margin: 0px; color: rgb(44, 62, 80); text-transform: uppercase; line-height: 20px;
+}
+h3 {
+	font-size: 16px; font-weight: 700;
+}
+h4 {
+	font-size: 16px; font-weight: 700;
+}
+h5 {
+	text-transform: uppercase; line-height: 20px; font-weight: 700;
+}
+p.intro {
+	margin: 12px 0px 0px; line-height: 24px; font-family: "Open Sans", sans-serif; font-size: 16px;
+}
+.topHome {
+	background: rgb(51, 122, 183);
+	right: 20px;
+	bottom: 20px;
+	position: fixed;
+	z-index: 5;
+}
+.topHome .fa-2x {
+	margin: 4px;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+}
+
+a {
+	color: rgb(51, 122, 183);
+}
+a:hover {
+	color: rgb(232, 126, 4); text-decoration: none;
+}
+a:focus {
+	color: rgb(232, 126, 4); text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+ol {
+	list-style: none;
+}
+.clearfix::after {
+	height: 0px; clear: both; font-size: 0px; display: block; visibility: hidden; content: " ";
+}
+.clearfix {
+	display: inline-block;
+}
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+ul {
+	padding: 0px; webkit-padding: 0; moz-padding: 0;
+}
+ol {
+	padding: 0px; webkit-padding: 0; moz-padding: 0;
+}
+#nav {
+	z-index: 9999;
+}
+.affix#nav {
+	top: 0px; width: 100%; position: fixed;
+}
+.navbar-custom {
+	padding: 6px 0px; border-radius: 0px; margin-bottom: 0px; background-color: rgb(44, 62, 80);
+}
+.navbar-custom .navbar-brand {
+	font-weight: 600;
+}
+.navbar-custom .navbar-brand:focus {
+	outline: 0px;
+}
+.navbar-custom .navbar-brand .navbar-toggle {
+	padding: 4px 6px; color: rgb(255, 255, 255); font-size: 16px;
+}
+.navbar-custom .navbar-brand .navbar-toggle:focus {
+	outline: 0px;
+}
+.navbar-custom .navbar-brand .navbar-toggle:active {
+	outline: 0px;
+}
+.navbar-custom a {
+	color: rgb(244, 245, 246);
+}
+.navbar-custom .nav li a {
+	transition:background 0.3s ease-in-out; text-transform: uppercase; letter-spacing: 1px; -webkit-transition: background .3s ease-in-out; -moz-transition: background .3s ease-in-out;
+}
+.navbar-custom .nav li a:hover {
+	outline: 0px; color: rgb(232, 126, 4); background-color: transparent;
+}
+.navbar-custom .nav li a:focus {
+	outline: 0px; color: rgb(232, 126, 4); background-color: transparent;
+}
+.navbar-custom .nav li a:active {
+	outline: 0px; color: rgb(232, 126, 4); background-color: transparent;
+}
+.navbar-custom .nav li.active {
+	outline: 0px;
+}
+.navbar-custom .nav li.active a {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+.navbar-custom .nav li.active a:hover {
+	color: rgb(255, 255, 255);
+}
+.btn-default {
+	border-color: rgb(118, 129, 141); margin: 0px 10px; color: rgb(118, 129, 141); font-size: 16px; background-color: transparent;
+}
+.btn-default:hover {
+	border-color: rgb(44, 62, 80); color: rgb(212, 226, 238); background-color: rgb(44, 62, 80);
+}
+.btn-default:focus {
+	border-color: rgb(44, 62, 80); color: rgb(238, 238, 238); background-color: rgb(44, 62, 80);
+}
+.focus.btn-default {
+	border-color: rgb(44, 62, 80); color: rgb(238, 238, 238); background-color: rgb(44, 62, 80);
+}
+.btn-default:active {
+	border-color: rgb(44, 62, 80); color: rgb(238, 238, 238); background-color: rgb(44, 62, 80);
+}
+.active.btn-default {
+	border-color: rgb(44, 62, 80); color: rgb(238, 238, 238); background-color: rgb(44, 62, 80);
+}
+.btn-primary {
+	border-color: rgb(118, 129, 141); color: rgb(118, 129, 141); background-color: rgb(255, 255, 255);
+}
+.btn-primary:hover {
+	border-color: rgb(44, 62, 80); color: rgb(238, 238, 238); background-color: rgb(44, 62, 80);
+}
+.btn-primary:focus {
+	border-color: rgb(44, 62, 80); color: rgb(238, 238, 238); background-color: rgb(44, 62, 80);
+}
+.focus.btn-primary {
+	border-color: rgb(44, 62, 80); color: rgb(238, 238, 238); background-color: rgb(44, 62, 80);
+}
+.btn-primary:active {
+	border-color: rgb(44, 62, 80); color: rgb(238, 238, 238); background-color: rgb(44, 62, 80);
+}
+.active.btn-primary {
+	border-color: rgb(44, 62, 80); color: rgb(238, 238, 238); background-color: rgb(44, 62, 80);
+}
+.btn-primary i.fa {
+	margin-right: 10px;
+}
+.intro {
+        background: url("../content/img/IMG_20170729_140816_HDR.jpg") no-repeat center / cover rgb(0, 0, 0); padding: 100px 0px; width: 100%; height: auto; text-align: center; color: rgb(255, 255, 255); display: table; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;
+}
+.intro .intro-body {
+	color: rgb(85, 85, 85); vertical-align: middle; display: table-cell;
+}
+.intro .intro-body .intro-text {
+	font-size: 18px;
+}
+.center.section-title {
+	padding: 30px 0px;
+}
+.section-title h2 {
+	font-weight: 700; margin-bottom: 30px;
+}
+.center.section-title h2 {
+	font-weight: 700; margin-bottom: 30px;
+}
+.center.section-title hr {
+	background: rgb(232, 126, 4); margin: 0px auto 30px; border: 0px currentColor; border-image: none; width: 70px; height: 4px; text-align: center; position: relative;
+}
+#about {
+	background: linear-gradient(rgb(255, 255, 255) 0%, rgb(244, 245, 246) 49%, rgb(255, 255, 255) 100%); padding: 80px 0px;
+}
+#about .about-text {
+	margin-left: 10px;
+}
+#about h4 {
+	color: rgb(51, 51, 51);
+}
+#about img {
+	border-radius: 50%; width: 200px; height: 200px; display: inline-block;
+}
+#about p {
+	margin-top: 20px; margin-bottom: 30px;
+}
+#services {
+	background: url("../content/img/skills-bg.jpg") fixed 0% 0% / cover; padding: 80px 0px;
+}
+#services h4 {
+	color: rgb(232, 126, 4); text-shadow: 1px 1px #fff;
+}
+.space {
+	margin-top: 40px;
+}
+#services i.fa {
+	color: rgb(44, 62, 80); font-size: 50px; margin-bottom: 20px;
+}
+#portfolio {
+	background: linear-gradient(rgb(255, 255, 255) 0%, rgb(244, 245, 246) 49%, rgb(255, 255, 255) 100%); padding: 80px 0px;
+}
+.categories {
+	text-align: center; padding-bottom: 30px;
+}
+ul.cat li {
+	display: inline-block;
+}
+ol.type li {
+	margin-left: 20px; display: inline-block;
+}
+ol.type li::after {
+/* margin-left: 5px; */
+content: " | ";
+}
+ol.type li:last-child::after {
+content: "";
+}
+ol.type li a {
+padding: 2px 8px; color: rgb(97, 110, 124);
+}
+ol.type li a.active {
+padding: 2px 8px; color: rgb(232, 126, 4);
+}
+ol.type li a:hover {
+color: rgb(232, 126, 4);
+}
+.isotope-item {
+z-index: 2;
+}
+.isotope-item.isotope-hidden {
+z-index: 1;
+}
+.isotope {
+transition-duration: 0.8s; -webkit-transition-duration: 0.8s; -moz-transition-duration: 0.8s;
+}
+.isotope .isotope-item {
+transition-duration: 0.8s; -webkit-transition-duration: 0.8s; -moz-transition-duration: 0.8s;
+}
+.isotope-item {
+margin-right: -1px; backface-visibility: hidden; -webkit-backface-visibility: hidden;
+}
+.isotope {
+transition-property: height, width; backface-visibility: hidden; -webkit-transition-property: height, width; -webkit-backface-visibility: hidden; -moz-transition-property: height, width;
+}
+.isotope .isotope-item {
+transition-property: transform, opacity; backface-visibility: hidden; -webkit-transition-property: -webkit-transform, opacity; -webkit-backface-visibility: hidden; -moz-transition-property: -moz-transform, opacity;
+}
+.portfolio-item {
+transition:0.5s ease-out; margin-bottom: 30px; -webkit-transition: all 0.5s ease-out; -o-transition: all 0.5s ease-out; -moz-transition: all 0.5s ease-out;
+}
+.portfolio-item:hover {
+margin-bottom: 30px; transform: scale(1.2); -webkit-transform: scale(1.2); -o-transform: scale(1.2); -moz-transform: scale(1.2);
+}
+.portfolio-item .hover-bg {
+height: 260px; overflow: hidden; position: relative;
+}
+.hover-bg .hover-text {
+background: rgba(0, 0, 0, 0.66); margin: 0px auto; padding: 25% 0px; transition:0.5s; width: 100%; height: 100%; text-align: center; color: rgb(255, 255, 255); position: absolute; opacity: 0;
+}
+.hover-bg .hover-text > h4 {
+transition:0.3s; opacity: 0; transform: translateY(100%); -webkit-transform: translateY(100%);
+}
+.hover-bg:hover .hover-text > h4 {
+opacity: 1; transform: translateY(0px); -webkit-transform: translateY(0); -webkit-backface-visibility: hidden;
+}
+.hover-bg .hover-text > i {
+transition:0.3s; opacity: 0; transform: translateY(0px); -webkit-transform: translateY(0);
+}
+.hover-bg:hover .hover-text > i {
+opacity: 1; transform: translateY(100%); -webkit-transform: translateY(100%); -webkit-backface-visibility: hidden;
+}
+.hover-bg:hover .hover-text {
+opacity: 1;
+}
+#portfolio i.fa {
+padding: 5px; color: rgb(232, 126, 4); font-size: 20px;
+}
+#skills {
+background: url("../content/img/skills-bg.jpg") fixed 0% 0% / cover; padding: 80px 0px;
+}
+#skills p {
+color: rgb(71, 77, 93);
+}
+#skills .skill {
+padding: 0px; text-align: center; margin-bottom: 40px;
+}
+#skills .skill h4 {
+color: rgb(232, 126, 4); font-weight: 700; text-shadow: 1px 1px #fff;
+}
+.chart {
+width: 152px; height: 152px; text-align: center; margin-bottom: 26px; display: inline-block; position: relative;
+}
+.chart canvas {
+left: 0px; top: 0px; position: absolute;
+}
+.percent {
+color: rgb(71, 77, 93); line-height: 152px; font-size: 21px; display: inline-block; z-index: 2;
+}
+.percent::after {
+font-size: 0.8em; margin-left: 0.1em; content: "%";
+}
+#resume {
+background: linear-gradient(rgb(255, 255, 255) 0%, rgb(244, 245, 246) 50%, rgb(255, 255, 255) 100%); padding: 80px 0px;
+}
+.timeline {
+list-style: none; padding: 0px; position: relative;
+}
+.timeline::before {
+left: 40px; top: 0px; width: 2px; bottom: 0px; margin-left: -1.5px; position: absolute; content: ""; background-color: rgb(238, 238, 238);
+}
+.timeline > li {
+margin-bottom: 50px; position: relative; min-height: 50px;
+}
+.timeline > li::before {
+display: table; content: " ";
+}
+.timeline > li::after {
+display: table; content: " ";
+}
+.timeline > li::after {
+clear: both;
+}
+.timeline > li .timeline-panel {
+padding: 0px 20px 0px 100px; width: 100%; text-align: left; float: right; position: relative;
+}
+.timeline > li .timeline-panel::before {
+left: -15px; right: auto; border-right-width: 15px; border-left-width: 0px;
+}
+.timeline > li .timeline-panel::after {
+left: -14px; right: auto; border-right-width: 14px; border-left-width: 0px;
+}
+.timeline > li .timeline-image {
+background: rgb(255, 255, 255); border-radius: 100%; border: 1px solid rgb(238, 238, 238); border-image: none; left: 0px; width: 70px; height: 70px; text-align: center; margin-left: 0px; position: absolute; z-index: 100;
+}
+.timeline > li .timeline-image h4 {
+text-transform: uppercase; font-size: 14px; margin-top: 20px;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+padding: 0px 20px 0px 100px; text-align: left; float: right;
+}
+.timeline > li.timeline-inverted > .timeline-panel::before {
+left: -15px; right: auto; border-right-width: 15px; border-left-width: 0px;
+}
+.timeline > li.timeline-inverted > .timeline-panel::after {
+left: -14px; right: auto; border-right-width: 14px; border-left-width: 0px;
+}
+.timeline > li:last-child {
+margin-bottom: 40px;
+}
+.timeline .timeline-heading h4 {
+text-transform: uppercase; margin-top: 0px;
+}
+.timeline .timeline-heading h2 {
+margin-top: 30px;
+}
+.timeline .timeline-heading h4.subheading {
+color: rgb(232, 126, 4); text-transform: none;
+}
+.timeline .timeline-body > p {
+margin-bottom: 0px;
+}
+.timeline .timeline-body > ul {
+margin-bottom: 0px;
+}
+#achievements {
+background: url("../content/img/achivements-bg.jpg") fixed 0% 0% / cover; padding: 80px 0px;
+}
+.achievement-box {
+margin: 20px 0px; text-align: center;
+}
+.achievement-box i.fa {
+color: rgb(232, 126, 4); font-size: 60px; font-weight: 400; margin-bottom: 20px;
+}
+.achievement-box h4 {
+text-transform: uppercase; font-size: 14px; font-weight: 700; text-shadow: 1px 1px #fff;
+}
+.achievement-box span.count {
+color: rgb(65, 81, 97); font-size: 36px; font-weight: 700; display: block;
+}
+#testimonials {
+background: linear-gradient(rgb(255, 255, 255) 0%, rgb(244, 245, 246) 50%, rgb(255, 255, 255) 100%); padding: 80px 0px;
+}
+#testimonial {
+padding: 0px;
+}
+#testimonial .item {
+width: 100%; height: auto; display: block;
+}
+#testimonial .item p {
+margin: 30px 0px; font-weight: 500;
+}
+#testimonial .img-circle {
+width: 100px; height: 100px;
+}
+.owl-theme .owl-controls .owl-page span {
+background: rgb(213, 216, 220); margin: 5px 7px; border-radius: 50%; transition:0.5s; width: 10px; height: 10px; display: block; opacity: 1; -webkit-border-radius: 0; -moz-border-radius: 20px;
+}
+.owl-theme .owl-controls .active.owl-page span {
+background: rgb(232, 126, 4); opacity: 1;
+}
+.owl-theme .clickable.owl-controls .owl-page:hover span {
+background: rgb(232, 126, 4); opacity: 1;
+}
+.owl-theme .owl-controls .active.owl-page span {
+background: rgb(232, 126, 4);
+}
+#contact {
+background: url("../content/img/contact-bg.jpg") fixed 0% 0% / cover; padding: 80px 0px 40px;
+}
+
+#contact h3 {
+text-transform: uppercase; font-size: 20px; font-weight: 400;
+}
+#contact form {
+padding: 30px 0px;
+}
+#contact i.fa {
+margin-bottom: 10px;
+}
+#contact .text-danger {
+text-align: left; color: rgb(232, 126, 4);
+}
+label {
+font-family: "Open Sans", sans-serif; font-size: 12px; font-weight: 400; float: left;
+}
+#contact .form-control {
+padding: 6px 12px; border-radius: 2px; border: 0px currentColor; transition:none; border-image: none; width: 100%; color: rgb(44, 62, 80); line-height: 1.4285; font-size: 14px; display: block; box-shadow: none; background-image: none; background-color: rgba(255, 255, 255, 0.8); -webkit-box-shadow: none; -webkit-transition: none; -o-transition: none;
+}
+#contact .form-control:focus {
+border-color: inherit; outline: 0px; -webkit-box-shadow: transparent;
+}
+:-ms-input-placeholder.form-control {
+color: rgb(44, 62, 80);
+}
+#contact .social {
+margin-top: 40px;
+}
+#contact h2 {
+color: #f4f5f6;
+}
+#contact  {
+color: #f4f5f6;
+}
+#contact button {
+color: #f4f5f6;
+}
+#contact p {
+color: #f4f5f6;
+}
+#contact .social ul li {
+margin: 0px 20px; display: inline-block;
+}
+#contact .social i.fa {
+padding: 4px 5px; transition:0.5s; color: rgb(244, 245, 246); font-size: 30px;
+}
+#contact .social i.fa:hover {
+color: rgb(232, 126, 4);
+}
+#contact .btn {
+padding: 10px 20px; border-radius: 4px; border-image: none; margin-top: 15px; background-color: transparent;
+}
+#contact .btn:hover {
+border: 1px solid rgb(232, 126, 4); border-image: none; color: rgb(232, 126, 4);
+}
+#contact .btn:focus {
+border: 1px solid rgb(232, 126, 4); border-image: none; color: rgb(232, 126, 4);
+}
+.btn:active {
+outline: 0px; box-shadow: none; background-image: none; -webkit-box-shadow: none;
+}
+.active.btn {
+outline: 0px; box-shadow: none; background-image: none; -webkit-box-shadow: none;
+}
+a:focus {
+outline-offset: none;
+}
+.btn:focus {
+outline-offset: none;
+}
+.btn:focus:active {
+outline-offset: none;
+}
+.active.btn:focus {
+outline-offset: none;
+}
+.focus.btn {
+outline-offset: none;
+}
+.focus.btn:active {
+outline-offset: none;
+}
+.focus.active.btn {
+outline-offset: none;
+}
+#footer {
+background: rgb(44, 62, 80); padding: 30px 0px 25px; color: rgb(221, 221, 221);
+}
+#footer .fnav {
+vertical-align: middle;
+}
+#footer p {
+font-size: 12px; margin-top: 10px;
+}
+@media all and (min-width:768px)
+{
+.intro {
+padding: 0px; height: 100%; text-align: left;
+}
+.intro .intro-body h1 {
+color: rgb(236, 255, 244); letter-spacing: -2px; font-family: "Lato", sans-serif; font-size:40px; font-weight: 600;
+}
+.intro .intro-body .intro-text {
+text-align: center; float: left; max-width: 75%;
+}
+.intro .intro-body .intro-text p {
+color: rgb(118, 129, 141); font-family: "Lato", sans-serif; font-size: 20px; margin-top: 20px; margin-bottom: 40px;
+}
+section {
+padding: 120px 0px;
+}
+header .intro-text {
+padding-top: 300px; padding-bottom: 200px;
+}
+#portfolio .portfolio-item {
+margin: 0px 0px 30px;
+}
+.timeline::before {
+left: 50%;
+}
+.timeline > li {
+margin-bottom: 100px; min-height: 100px;
+}
+.timeline > li .timeline-panel {
+padding: 0px 20px 20px 30px; width: 41%; text-align: right; float: left;
+}
+.timeline > li .timeline-image {
+left: 50%; width: 100px; height: 100px; margin-left: -50px;
+}
+.timeline > li .timeline-image h4 {
+line-height: 18px; font-weight: 400; margin-top: 16px;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+padding: 0px 30px 20px 20px; text-align: left; float: right;
+}
+}
+@media all and (min-width:992px)
+{
+#here-me h1 {
+margin: 10px 0px 0px;
+}
+.timeline > li {
+min-height: 150px;
+}
+.timeline > li .timeline-panel {
+padding: 0px 20px 20px;
+}
+.timeline > li .timeline-image {
+width: 150px; height: 150px; margin-left: -75px;
+}
+.timeline > li .timeline-image h4 {
+line-height: 20px; font-size: 18px; margin-top: 30px;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+padding: 0px 20px 20px;
+}
+}
+@media all and (min-width:1200px)
+{
+.timeline > li {
+min-height: 170px;
+}
+.timeline > li .timeline-panel {
+padding: 10px 20px 20px 100px;
+}
+.timeline > li .timeline-image {
+width: 150px; height: 150px; margin-left: -75px;
+}
+.timeline > li .timeline-image h4 {
+font-weight: 400; margin-top: 40px;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+padding: 10px 100px 20px 20px;
+}
+}

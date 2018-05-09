@@ -3,12 +3,409 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Смоглюк Сергей - Инженер-программист &amp; Fron End разработчик</title>
 
-    <link rel="stylesheet" href="{% static 'css/web.css' %}">
+
+      <link href="{% static 'vendors/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
 
 </head>
 <body>
-  <h>Hello World</h>
+
+  <headER class="intro">
+      <div class="intro-body">
+          <div class="container">
+              <div class="row">
+                  <div class="intro-text">
+                      <h1>Привет, Меня зовут - Смоглюк Сергей</h1>
+                      <p>Инженер-программист &amp; Front End разработчик</p>
+                      <a class="btn btn-default btn-lg page-scroll" href="#about">Обо мне</a>
+                      <a class="btn btn-default btn-lg page-scroll" href="#portfolio">Портфолио</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </headER> <!-- navigation -->
+
+  <div id="nav">
+      <nav class="navbar navbar-custom fixed">
+          <div class="container">
+              <div class="navbar-header">
+                  <!-- <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-main-collapse">
+                       <i class="fa fa-bars"></i>
+                   </button> -->
+                  <a class="navbar-brand page-scroll" href="#">Смоглюк Сергей</a>
+              </div><!-- Collect the nav links, forms, and other content for toggling -->
+
+              <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                  <ul class="nav navbar-nav"><!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+
+
+                      <li>
+                          <a class="page-scroll" href="#about">Обо мне</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#portfolio">Портфолио</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#skills">Умения</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#resume">Резюме</a>
+                      </li>
+
+                      <li>
+                          <a class="page-scroll" href="#contact">Контакт</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </div>
+
+  <!-- about Section -->
+  <div id="about">
+
+      <div class="container">
+          <div class="section-title text-center center">
+              <h2>Обо мне</h2>
+              <hr>
+          </div>
+
+          <div class="row">
+              <div class="col-md-12 text-center">
+                  <img class="img-responsive" src="{% static 'content/img/IMG_20170729_180921_634.jpg' %}">
+              </div>
+
+              <div class="col-md-8 col-md-offset-2">
+                  <div class="about-text">
+                      <p>Закончил "Сибирский Федеральный университет" кафедру "Автоматизированных Систем Управления Производством" специальность "Управление в техкнических системах".</p>
+                      <p>Увлекаюсь латиноамериканскими танцами, скалолазаньем, альпинизмом, сноубордом.</p>
+                      <p>Иностранный язык: английский  (в рамках профессиональной деятельности)</p>
+                      <p>Уровень владения компьютером: уверенный  пользователь</p>
+                      <p>Знание компьютерных программ: MS Office, КОМПАС, МВТУ, MathCAD, Matlab, MS Visual Studio (C#, C++,WPF + Entity Framevork), MS SQL, PostgressSQL, Unity 3D, Android Studio, Eclipse, Qt Creator(5.7), MPLAB IPE v3.20, ORcAD 16.5</p>
+                      <p>Водительские права: «B», с 2013 года</p>
+
+                      <p>ЛИЧНЫЕ КАЧЕСТВА: Быстрая обучаемость, Желание развиваться, Решение не тривиальных задач</p>
+
+                      <p>ПРОЧАЯ ИНФОРМАЦИЯ: неконфликтный, коммуникабельный, кандидат в мастера спорта по лёгкой атлетике на средних дистанция от 800м. до 21 км. Призер Всероссийских соревнований среди студентов и школьников, член сборной Красноярского края по лёгкой атлетике, Рекомендации могут быть представлены по требованию.
+
+
+                          <?php
+                          if(isset($_GET["var"]) && $_GET["var"] == 'value')
+                          {
+                              $file = "content/Резюме_Смоглюк_С_Ю.pdf";
+
+                              if (file_exists($file)) {
+                                  header('Pragma: public');
+                                  header('Expires: 0');
+                                  header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+                                  header("Content-Type: application/force-download");
+                                  header("Content-Type: application/octet-stream");
+                                  header("Content-Type: application/download");
+                                  header('Content-Length: ' . filesize($file));
+                                  header('Content-Description: File Transfer');
+                                  header('Content-Disposition: attachment; filename="'.basename($file).'"');
+                                  header('Content-Transfer-Encoding: Binary');
+
+                                  ob_clean();
+                                  flush();
+                                  readfile($file);
+                                  exit(0);
+                              }
+                              else {
+                                  echo "The file $file does not exist";
+                                  exit(0);
+                              }
+                          }
+                          ?>
+
+                      <script>
+
+                      </script>
+
+                      <p class="text-center">
+                         <?= Html::a('Скачать резюме', 'index.php?var=value', ['class' => 'submit btn btn-primary', 'name' => 'login-button']) ?>
+
+                          <!--  <a class="btn btn-primary" onclick=''>-->
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  <div id="portfolio">
+
+            <div class="container">
+                <div class="section-title text-center center">
+                    <H2>Моё Портфолио</H2>
+                    <HR>
+                    <div class="clearfix">
+
+                    </div>
+
+                    <p>Некоторые из проектов в которых я принимал участие:</p>
+                </div>
+
+              </div>
+        </div>
+
+        <!-- Skills Section -->
+  <div class="text-center" id="skills">
+      <div class="container">
+          <div class="section-title center">
+              <H2>Мои Умения</H2>
+              <HR>
+          </div>
+          <div class="row">
+              <div class="col-md-4 col-sm-6 skill">
+      <SpaN class="chart" data-percent="95">
+        <SpaN class="percent">95</SpaN>
+      </SpaN>
+                  <H4>HTML5</H4>
+              </div>
+
+              <div class="col-md-4 col-sm-6 skill">
+      <SpaN class="chart" data-percent="85">
+        <SpaN class="percent">85</SpaN>
+      </SpaN>
+                  <H4>CSS3</H4>
+              </div>
+
+
+
+              <div class="col-md-4 col-sm-6 skill">
+      <SpaN class="chart" data-percent="65">
+        <SpaN class="percent">65</SpaN>
+      </SpaN>
+                  <H4>JavaScript</H4>
+              </div>
+
+              <div class="col-md-4 col-sm-6 skill">
+      <SpaN class="chart" data-percent="60">
+        <SpaN class="percent">60</SpaN>
+      </SpaN>
+                  <H4>PHP</H4>
+              </div>
+
+              <div class="col-md-4 col-sm-6 skill">
+      <SpaN class="chart" data-percent="95">
+        <SpaN class="percent">95</SpaN>
+      </SpaN>
+
+                  <H4>C++</H4>
+              </div>
+
+              <div class="col-md-4 col-sm-6 skill">
+      <SpaN class="chart" data-percent="90">
+        <SpaN class="percent">90</SpaN>
+      </SpaN>
+                  <H4>C#</H4>
+              </div>
+
+              <div class="col-md-4 col-sm-6 skill">
+      <SpaN class="chart" data-percent="35">
+        <SpaN class="percent">35</SpaN>
+      </SpaN>
+                  <H4>Java</H4>
+              </div>
+
+              <div class="col-md-4 col-sm-6 skill">
+      <SpaN class="chart" data-percent="35">
+        <SpaN class="percent">35</SpaN>
+      </SpaN>
+                  <H4>Python</H4>
+              </div>
+
+              <div class="col-md-4 col-sm-6 skill">
+      <SpaN class="chart" data-percent="90">
+        <SpaN class="percent">90</SpaN>
+      </SpaN>
+                  <H4>SQL</H4>
+              </div>
+
+
+          </div>
+      </div>
+  </div>
+
+
+  <!-- Resume Section -->
+  <div class="text-center" id="resume">
+      <div class="container">
+          <div class="section-title center">
+              <H2>Опыт работы</H2>
+              <HR>
+          </div>
+          <div class="row">
+              <div class="col-lg-12">
+                  <ul class="timeline">
+                      <li>
+                          <div class="timeline-image">
+                              <H4>Настоящее время<BR> - <BR>Май 2016</H4>
+                          </div>
+
+                          <div class="timeline-panel">
+                              <div class="timeline-heading">
+                                  <H4><<НПП "Радиосвязь">></H4>
+                                  <H4 class="subheading">Инженер-программист</H4>
+                              </div>
+
+                              <div class="timeline-body">
+                                  <p>АО <<НПП "Радиосвязь">>, Инженер-конструктор 3 категории.
+                                      Должностные обязанности: Написание программного обеспечения для автоматизированного рабочего места на с++ с библиотеками qt.
+                                      Проектирование Баз данных и удаленное управление устройствами по Ethernet.По  UDP/TCP/SCPI протоколу.
+
+
+                                  </p>
+                              </div>
+                          </div>
+                      </li>
+
+                      <li class="timeline-inverted">
+                          <div class="timeline-image">
+                              <H4>Август  2015 <BR>                - <BR>                Июль 2015 </H4>
+                          </div>
+
+                          <div class="timeline-panel">
+                              <div class="timeline-heading">
+                                  <H4>Норильский Никель</H4>
+                                  <H4 class="subheading">Кровельщик</H4></div>
+                              <div class="timeline-body">
+                                  <p>Студенческий отряд Сибирский федеральный университет</p>
+                              </div>
+                          </div>
+                      </li>
+
+
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+      <div class="container">
+          <div class="section-title center">
+              <H2>Образование</H2>
+              <HR>
+          </div>
+          <div class="row">
+              <div class="col-lg-12">
+                  <ul class="timeline">
+                      <!-- Education Section-->
+                      <li>
+                          <div class="timeline-image">
+                              <H4>Настоящее время <BR>                - <BR>                2016 </H4>
+                          </div>
+
+                          <div class="timeline-panel">
+                              <div class="timeline-heading">
+                                  <H4>СФУ ИКИТ</H4>
+                                  <H4 class="subheading">Студент (магистр)</H4></div>
+                              <div class="timeline-body">
+                                  <p>Сибирский федеральный университет, Институт космических и информационных  технологий
+                                      Специальность: Управление и информатика в технических системах.
+                                      Уровень подготовки: магистр
+                                  </p>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="timeline-inverted">
+                          <div class="timeline-image">
+                              <H4>2016 <BR>                - <BR>                2012 </H4>
+                          </div>
+                          <div class="timeline-panel">
+                              <div class="timeline-heading">
+                                  <H4>СФУ ИКИТ</H4>
+                                  <H4 class="subheading">Студент (бакалавр)</H4></div>
+                              <div class="timeline-body">
+                                  <p>Сибирский федеральный университет, Институт космических и информационных  технологий
+                                      Специальность: Управление и информатика в технических системах.
+                                      Уровень подготовки: бакалавр (диплом с отличием)
+                                  </p>
+                              </div>
+                          </div>
+                      </li>
+
+                      <li>
+                          <div class="timeline-image">
+                              <H4>2012 <BR>                - <BR>                2001 </H4>
+                          </div>
+
+                          <div class="timeline-panel">
+                              <div class="timeline-heading">
+                                  <H4>Школа</H4>
+
+                                  <H4 class="subheading">Школьник</H4>
+                              </div>
+
+                              <div class="timeline-body">
+                                  <p class="text-muted">Школа №82 ; №92 ; №18.</p>
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="text-center" id="contact">
+      <div class="container">
+          <div class="section-title center">
+              <H2>Мой контакт</H2>
+              <HR>
+              <p></p>
+          </div>
+
+
+          <div class="col-md-8 col-md-offset-2">
+              <H3>Телефон: +7(983)-206-8482</H3>
+              <p>Написать мне сообщение: </p>
+              <FORM name="sentMessage" id="contactForm" novalidate="">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <INpUT class="form-control" id="name" required="required" type="text" placeholder="Имя" value="">
+                              <p class="help-block text-danger"></p></div></div>
+                      <div class="col-md-6">
+                          <div class="form-group"><INpUT class="form-control" id="email" required="required" type="email" placeholder=" Электронная почта" value="">
+                              <p class="help-block text-danger"></p></div></div></div>
+                  <div class="form-group"><TEXTaREa name="message" class="form-control" id="message" required="" placeholder="Сообщение" rows="4">Сообщение</TEXTaREa>
+                      <p class="help-block text-danger"></p></div>
+                  <div id="success">
+
+                  </div>
+                  <button class="btn btn-default" type="submit">Отправить</button>
+
+          </FORM>
+
+
+          </div>
+      </div>
+  </div>
+
+  <!-- Bootstrap -->
+
+<script src="{% static 'js/jquery.1.11.1.js' %}"></script>
+<script src="{% static 'js/contact_me.js' %}"></script>
+<script src="{% static 'js/easypiechart.js' %}"></script>
+<script src="{% static 'js/jqBootstrapValidation.js' %}"></script>
+<script src="{% static 'js/jquery.counterup.js' %}"></script>
+<script src="{% static 'js/jquery.isotope.js' %}"></script>
+<script src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+<script src="{% static 'js/owl.carousel.js' %}"></script>
+<script src="{% static 'js/waypoints.js' %}"></script>
+<script src="{% static 'vendors/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'vendors/main/main.js' %}"></script>
+<script src="{% static 'js/SmoothScroll.js' %}"></script>
+
+
+
+
 </body>
 </html>
