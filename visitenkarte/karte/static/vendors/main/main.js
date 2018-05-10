@@ -5,7 +5,7 @@ function main() {
 
 (function () {
    'use strict';
-   
+
    // Testimonial slider
   	$('a.page-scroll').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -29,13 +29,13 @@ function main() {
         });
 
   	});
-	
+
 	// affix the navbar after scroll below header
 $('#nav').affix({
       offset: {
         top: $('header').height()
       }
-});	
+});
 
 	// skills chart
 	$(document).ready(function(e) {
@@ -45,15 +45,15 @@ $('#nav').affix({
 		var top = $('#skills').height()-$(window).scrollTop();
 		//console.log(top)
 		if(top<-1000){
-			if(index==0){	
-			
+			if(index==0){
+
 				$('.chart').easyPieChart({
 					easing: 'easeOutBounce',
 					onStep: function(from, to, percent) {
 						$(this.el).find('.percent').text(Math.round(percent));
 					}
 				});
-			
+
 				}
 			index++;
 		}
@@ -85,7 +85,7 @@ $('#nav').affix({
 
 
 	$(document).ready(function( $ ) {
-		if($("span.count").length > 0){	
+		if($("span.count").length > 0){
 			$('span.count').counterUp({
 					delay: 10, // the delay time in ms
 			time: 1000 // the speed time in ms
@@ -96,11 +96,10 @@ $('#nav').affix({
   	// Pretty Photo
 	$("a[rel^='prettyPhoto']").prettyPhoto({
 		social_tools: false
-	});	
+	});
 
 }());
 
 
 }
 main();
-
